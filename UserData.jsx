@@ -19,7 +19,6 @@ export default function UserData({userId}){
     }, [userId]);
 
     useEffect(() => {
-        fetchUserData();
         let intervalId = setInterval(() => {
             setState(prevState => ({...state, seconds: prevState.seconds + 1 }));
         }, 1000);
